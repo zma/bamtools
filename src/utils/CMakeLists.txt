@@ -21,7 +21,7 @@ add_library( BamTools-utils STATIC
            )
 
 # link BamTools-utils library with BamTools automatically
-target_link_libraries( BamTools-utils BamTools )
+target_link_libraries( BamTools-utils BamTools-static )
 
 # set BamTools library properties
 set_target_properties( BamTools-utils PROPERTIES

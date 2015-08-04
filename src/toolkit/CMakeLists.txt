@@ -38,7 +38,8 @@ set_target_properties( bamtools_cmd PROPERTIES
 configure_file( bamtools_version.h.in ${BamTools_SOURCE_DIR}/src/toolkit/bamtools_version.h )
 
 # define libraries to link
-target_link_libraries( bamtools_cmd BamTools BamTools-utils jsoncpp )
+# target_link_libraries( bamtools_cmd BamTools-static BamTools-utils jsoncpp )
+target_link_libraries( bamtools_cmd BamTools-static BamTools-utils jsoncpp )
 
 # set application install destinations
 install( TARGETS bamtools_cmd DESTINATION "bin")

@@ -57,6 +57,11 @@ if( "${CMAKE_SYSTEM_NAME}" MATCHES "SunOS" )
 endif()
 
 # -------------------------------------------
+# add -static flags
+
+SET( CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} -static" )
+
+# -------------------------------------------
 
 # add our includes root path
 include_directories( src )
